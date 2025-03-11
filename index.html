@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 24th Birthday!</title>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #ffe0f0, #e0f8ff, #f0ffe0); /* Pastel gradient */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .birthday-message {
+            text-align: center;
+            opacity: 0;
+            animation: fadeInBounce 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeInBounce {
+            0% { opacity: 0; transform: translateY(-50px); }
+            60% { opacity: 1; transform: translateY(10px); }
+            80% { transform: translateY(-5px); }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .birthday-message h1 {
+            font-size: 3em;
+            color: #ff69b4; /* Light pink text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .birthday-message h1:hover {
+            color: #e91e63; /* Deeper pink on hover */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .heart-image {
+            width: 100px;
+            margin: 20px auto;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: confettiFall 3s linear infinite;
+        }
+
+        @keyframes confettiFall {
+            0% { transform: translateY(-10px); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        @font-face {
+            font-family: 'Nunito';
+            src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+        }
+
+        .custom-paragraph {
+            background-color: rgba(255, 105, 180, 0.1); /* Pink with low opacity */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 80%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="birthday-message">
+        <h1>Happy 24th Birthday to My Love! You make every day brighter!</h1>
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23ff69b4' d='M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z'/></svg>" alt="Heart" class="heart-image">
+    </div>
+
+    <div class="confetti" style="left: 10%; background-color: #ffcccc; animation-delay: 0.5s;"></div>
+    <div class="confetti" style="left: 30%; background-color: #cce0ff; animation-delay: 1s;"></div>
+    <div class="confetti" style="left: 50%; background-color: #ccffcc; animation-delay: 1.5s;"></div>
+    <div class="confetti" style="left: 70%; background-color: #ffe0cc; animation-delay: 2s;"></div>
+    <div class="confetti" style="left: 90%; background-color: #e0ccff; animation-delay: 2.5s;"></div>
+
+    <div class="custom-paragraph">
+        To my most beloved person in the whole universe. I love you the most in the whole world. I hope this website pleases you. My wish is that we stay together forever, and I always keep you happy. May we remain loyal and kind to each other, giving each other time throughout our lives. May Allah bless our marriage, making this companionship eternal. Today is your birthday, so I wanted to do something special and wish you a happy birthday. May Allah grant you great success and keep you happy forever. Happy Birthday Jani.
+    </div>
+
+    <footer>
+        "Love is composed of a single soul inhabiting two bodies." - Aristotle
+    </footer>
+
+</body>
+</html>
